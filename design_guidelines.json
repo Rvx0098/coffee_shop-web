@@ -1,0 +1,138 @@
+{
+  "project_name": "Coffee Bliss",
+  "app_type": "hybrid_fullstack",
+  "theme": "light",
+  "archetype": "1_organic_earthy",
+  "design_philosophy": "Deliver a distinctive, premium, warm editorial coffee-brand feel. Avoid AI-slop purples and generic tech-SaaS looks. Prioritize sensory textures, generous spacing, and deep contrast using warm cream/mocha palettes.",
+  "colors": {
+    "background": {
+      "default": "#F9F6F0",
+      "surface": "#FCFAF8",
+      "surface_alt": "#F1EBE1"
+    },
+    "text": {
+      "primary": "#2B211E",
+      "secondary": "#5C4F4A",
+      "muted": "#8A7973",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "accent": "#D96C4A",
+      "accent_hover": "#C25D3D",
+      "mocha": "#3F322D"
+    },
+    "border": {
+      "default": "#E3DCCC",
+      "focus": "#D96C4A"
+    },
+    "glassmorphism": {
+      "spec": "backdrop-blur-xl bg-white/70 border-white/40 shadow-[0_8px_32px_rgba(43,33,30,0.08)] backdrop-saturate-150",
+      "usage": "Sticky headers, cart drawers, modal overlays"
+    }
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Outfit, sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold tracking-tight leading-none text-[#2B211E]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-heading font-medium tracking-tight leading-tight text-[#2B211E]",
+      "h3": "text-xl sm:text-2xl font-heading font-medium text-[#2B211E]",
+      "h4": "text-lg sm:text-xl font-heading font-medium text-[#2B211E]",
+      "body": "text-base font-body leading-relaxed text-[#5C4F4A]",
+      "small": "text-sm font-body text-[#8A7973]",
+      "overline": "text-xs font-body uppercase tracking-[0.2em] font-medium text-[#D96C4A]"
+    },
+    "install_instructions": "Add Google Fonts imports for Cormorant Garamond and Outfit in index.css or equivalent layout wrapper."
+  },
+  "spacing_and_layout": {
+    "generous_padding": "Use p-8, p-12, or py-20 for section spacing. Containers must have breathing room.",
+    "grid_strategy": "Mobile-first. Use 12-column grids (grid-cols-1 md:grid-cols-12) for asymmetrical feature layouts.",
+    "cards": "Internal padding of p-6 or p-8 to prevent text collision with borders."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#D96C4A] text-white font-body font-medium px-6 py-3 rounded-none md:rounded-sm transition-all duration-300 hover:bg-[#C25D3D] hover:-translate-y-0.5 hover:shadow-lg focus:ring-2 focus:ring-[#D96C4A]/50 focus:ring-offset-2 focus:ring-offset-[#F9F6F0]",
+      "secondary": "bg-transparent border border-[#3F322D] text-[#3F322D] font-body font-medium px-6 py-3 rounded-none md:rounded-sm transition-all duration-300 hover:bg-[#3F322D] hover:text-white",
+      "ghost": "text-[#5C4F4A] hover:text-[#D96C4A] transition-colors duration-200"
+    },
+    "cards": {
+      "menu_item": "bg-[#FCFAF8] rounded-xl overflow-hidden border border-[#E3DCCC] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#2B211E]/5",
+      "testimonial": "bg-white rounded-2xl p-8 shadow-[0_4px_24px_rgba(43,33,30,0.04)] border border-[#E3DCCC]/50"
+    },
+    "inputs": {
+      "form": "bg-white border border-[#E3DCCC] rounded-sm px-4 py-3 text-[#2B211E] font-body focus:outline-none focus:border-[#D96C4A] focus:ring-1 focus:ring-[#D96C4A] transition-colors"
+    },
+    "shadcn_overrides": "Do not use standard Vercel-look borders. Apply nested radii and use warm border tokens. Convert dialogs/drawers to use the glassmorphism spec."
+  },
+  "pages": {
+    "home": [
+      "Hero: Large warm cafe interior background, dark glassmorphism overlay or text-shadow for readability, H1 heading, Primary CTA.",
+      "Featured Products: 3-column grid of top-tier coffee items.",
+      "Testimonials: Grid or elegant swiper with portrait images, 5-star icons (in accent color), and italicized serif quotes."
+    ],
+    "menu": [
+      "Category Tabs: Coffee, Beverages, Desserts (Use active state accent line or background).",
+      "Menu Grid: Standard 3 or 4-column responsive grid.",
+      "Add to Cart: Button visible on hover or persistent below price."
+    ],
+    "about": [
+      "Brand Story: Asymmetrical 'Tetris' grid mixing text blocks and cafe interior shots.",
+      "Team: High-quality portraits with elegant typography."
+    ],
+    "contact": [
+      "Form: Clean inputs on left, Map/Info on right.",
+      "Placeholder Map: Aesthetic abstract image or static map placeholder.",
+      "Hours & Phone: Prominently displayed with subtle icons."
+    ],
+    "auth": [
+      "Login/Register: Split screen. Left side aesthetic coffee image, right side glassmorphism or clean white form."
+    ],
+    "cart_drawer": [
+      "Behavior: Slides in from right. Uses local storage sync.",
+      "UI: Image, Title, Qty controls (-, +), Remove (trash icon), Total."
+    ],
+    "admin_dashboard": [
+      "Layout: Sidebar + Main Content.",
+      "Style: Clean, functional, tabular data for menu items (Add/Remove). Avoid over-styling, prioritize clarity."
+    ]
+  },
+  "image_urls": {
+    "hero_cafe": [
+      "https://images.unsplash.com/photo-1718552160371-82f3b1cf6e09?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1669131196146-898b2dd8ab1d?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ],
+    "products_coffee": [
+      "https://images.unsplash.com/photo-1634709170162-23a76022e9c9?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1660144128596-ee0e16e1d100?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1660144128607-7111bfaa5613?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1660144102328-68974117f580?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ],
+    "testimonials_team": [
+      "https://images.unsplash.com/photo-1672462478040-a5920e2c23d8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1635088047149-0d698fb5f849?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1592234789031-94bf65f630ed?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "animations": {
+    "hover": "Smooth transform scale or translate-y, accompanied by subtle box-shadow increase.",
+    "transitions": "Use 'transition-all duration-300' for most interactable elements.",
+    "page_load": "Fade-in staggered on lists."
+  },
+  "accessibility": {
+    "contrast": "Ensure white text over accent orange meets 4.5:1, otherwise darken orange or use dark text. (White on #D96C4A may be slightly low contrast, check and use #C25D3D for critical text).",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case (e.g., 'data-testid=\"add-to-cart-button\"')."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. Do not inject Tailwind's default blues or purples anywhere.",
+    "Use Lucide-react for standard icons.",
+    "For the Sticky Nav, implement the glassmorphism spec provided when scrolled.",
+    "Use Shadcn components (Dialog, Tabs, Drawer, etc.) but strip their default harsh grayscale borders and replace with our warm border tokens.",
+    "Ensure the hero image has a sufficient dark gradient overlay so the heading text is perfectly readable.",
+    "Cart drawer MUST sync with localStorage.",
+    "All forms MUST have validation logic (frontend).",
+    "Apply optical alignment in navigation and cards.",
+    "Do not use placeholder image services like via.placeholder.com. Use the provided Unsplash URLs."
+  ]
+}
